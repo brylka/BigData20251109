@@ -11,9 +11,6 @@ def hello_world():
     <html>
         <head>
             <title>Witaj świecie, BigData z Pythionem!</title>
-            <style>
-                body { background-color: red; }
-            </style>
         </head>
         <body>
             <h1>Hello world! BigData z Pythionem!</h1>
@@ -22,6 +19,10 @@ def hello_world():
         </body>
     </html>
     """
+
+    if ENV == 'dev':
+        text += "<style>body { background-color: red; }</style>"
+
     return(text)
 
 @application.route('/json')
