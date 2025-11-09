@@ -10,7 +10,7 @@ class FlaskAppTest(unittest.TestCase):
     def test_home_page(self):
         response = self.app.get('/')
         data = response.data.decode('utf-8')
-        self.assertIn('Witaj świecie, BigData z Pythonem!', data)
+        self.assertIn('Hello world! BigData z Pythonem!', data)
 
 if __name__ == '__main__':
     unittest.main()
