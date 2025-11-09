@@ -12,7 +12,7 @@ def hello_world():
     text = """<!DOCTYPE html>
     <html>
         <head>
-            <title>Witaj świecie, BigData z Pythonem!</title>
+            <title>Hello world! BigData z Pythonem!</title>
         </head>
         <body>
             <h1>Hello world! BigData z Pythonem!</h1>
