@@ -12,10 +12,10 @@ def hello_world():
     text = """<!DOCTYPE html>
     <html>
         <head>
-            <title>Witaj świecie, BigData z Pythionem!</title>
+            <title>Witaj świecie, BigData z Pythonem!</title>
         </head>
         <body>
-            <h1>Hello world! BigData z Pythionem!</h1>
+            <h1>Hello world! BigData z Pythonem!</h1>
             <p>Procesy CI/CD - automatyczne wdrażąnie.</p>
             <p>Wykonał: Bartosz Bryniarski</p>
         </body>
