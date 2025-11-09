@@ -1,7 +1,9 @@
-from flask import Flask
+import os
+from flask import Flask, jsonify
 
 application = Flask(__name__)
 
+ENV = os.environ.get('FLASK_ENV', 'dev')
 
 @application.route('/')
 def hello_world():
@@ -18,6 +20,10 @@ def hello_world():
     </html>
     """
     return(text)
+
+@application.route('/json')
+def get_json():
+    return jsonify({"FLASK_ENV": ENV})
 
 
 if __name__ == "__main__":
