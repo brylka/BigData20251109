@@ -11,7 +11,7 @@ def hello_world():
             <title>Witaj świecie, BigData z Pythionem!</title>
         </head>
         <body>
-            <h1>Witaj świecie, BigData z Pythionem!</h1>
+            <h1>Hello world! BigData z Pythionem!</h1>
             <p>Procesy CI/CD - automatyczne wdrażąnie.</p>
             <p>Wykonał: Bartosz Bryniarski</p>
         </body>
