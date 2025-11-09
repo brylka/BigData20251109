@@ -1,4 +1,6 @@
 import os
+import random
+from datetime import datetime
 from flask import Flask, jsonify
 
 application = Flask(__name__)
@@ -29,6 +31,15 @@ def hello_world():
 def get_json():
     return jsonify({"FLASK_ENV": ENV})
 
+
+@application.route('/weather/<station_id>')
+def get_wheater_simple(station_id):
+    return jsonify({
+        "station_id": station_id,
+        "temperature": random.uniform(-15, 45),
+        "humidity": random.uniform(40, 90),
+        "timestamp": datetime.now().isoformat()
+    })
 
 if __name__ == "__main__":
     application.run(debug=True)
